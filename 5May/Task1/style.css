@@ -1,0 +1,34 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation-name: boxgrow;
+    animation-duration: 2s;
+    animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+    animation-iteration-count: 2;
+    margin-top: 250px;
+}
+
+@keyframes boxgrow{
+    0%{
+        width: 100px;
+        height: 100px; 
+    }
+    
+    50%{
+        width: 250px;
+        height: 250px; 
+    }
+    100%{
+        width: 100px;
+        height: 100px; 
+    }
+}
